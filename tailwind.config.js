@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'bg-banner': "url('/bg.jpg')",
+        'bg-bannerTwo': "url('/bgTwo.jpg')",
       },
       keyframes: {
         'accordion-down': {
