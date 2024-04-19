@@ -21,6 +21,9 @@ module.exports = {
         'bg-banner': "url('/bg.jpg')",
         'bg-bannerTwo': "url('/bgTwo.jpg')",
       },
+      screens: {
+        'menu-break': '943px',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
