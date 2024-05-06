@@ -5,25 +5,26 @@ type ProductsListParams = {
   data: typeof ProductMockApi.products
 }
 
-export default function Menu(props: ProductsListParams) {
-  const [productVisibility, setProductVisibility] = useState<{
-    [key: string]: boolean
-  }>(
-    props.data.reduce((acc, product) => {
-      acc[product.productId] = false
-      return acc
-    }, {}),
-  )
+// Função para formatar o preço como moeda
+function formatPrice(price: number): string {
+  return price.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  })
+}
 
-  const toggleProductVisibility = (productId: string) => {
-    setProductVisibility((prevState) => ({
-      ...prevState,
-      [productId]: !prevState[productId],
-    }))
+export default function Menu(props: ProductsListParams) {
+  const [selectedProduct, setSelectedProduct] = useState<number | null>(null)
+
+  const toggleProductVisibility = (productId: number) => {
+    setSelectedProduct(productId === selectedProduct ? null : productId)
   }
 
   return (
-    <div className="bg-bg-bannerTwo bg-center bg-cover h-[800px] mt-[90px]">
+    <div
+      className="bg-bg-bannerTwo bg-center bg-cover h-[800px] mt-[90px]"
+      id="menu"
+    >
       <div className="flex items-center justify-center ">
         <ul className="w-full">
           {props.data?.map((product) => (
@@ -31,14 +32,13 @@ export default function Menu(props: ProductsListParams) {
               <div className="grid items-center justify-center mt-16">
                 <button
                   onClick={() => toggleProductVisibility(product.productId)}
-                  className="text-white"
+                  className={`w-[400px] text-white hover:border-[#CC0D03] hover:border-b hover:inline-block ${selectedProduct === product.productId ? 'border-b border-[#CC0D03]' : ''}`}
                 >
                   {product.title}
                 </button>
-                <div className="border-t border-[#CC0D03] my-2 max-w-[300px]" />
               </div>
-              {productVisibility[product.productId] && (
-                <ul className="space-y-[40px] mt-[20px]">
+              {selectedProduct === product.productId && (
+                <ul className="space-y-[40px] mt-[20px] overflow-auto scrollbar-hide">
                   {product.productsList.map((productList) => (
                     <li key={productList.productId}>
                       <div className="flex flex-row justify-around items-center">
@@ -49,7 +49,7 @@ export default function Menu(props: ProductsListParams) {
                         />
                         <h1 className="text-white">{productList.name}</h1>
                         <span className="text-[#FFD200]">
-                          {productList.price}
+                          {formatPrice(productList.price)}
                         </span>
                       </div>
                     </li>
