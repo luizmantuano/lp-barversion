@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <div className="mt-[90px]">
+    <div className="mt-[90px]" id="contact">
       <div className="flex flex-col items-center justify-center">
         <p className="font-bold text-[13px]">ONDE NOS ENCONTRAR</p>
         <h1 className="text-[32px]">Contate-nos</h1>

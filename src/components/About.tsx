@@ -7,7 +7,7 @@ import { FaRegHandshake } from 'react-icons/fa6'
 
 export default function About() {
   return (
-    <div className="flex flex-col mt-[70px]">
+    <div className="flex flex-col mt-[70px]" id="about">
       <div className="mt-[50px]">
         <img src={Img3} alt="#" width={450} />
       </div>
