@@ -8,9 +8,13 @@ import Line from '@/assets/img/linha.png'
 export default function Home() {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
+  const closeMenu = () => {
+    setMenuIsOpen(false)
+  }
+
   return (
     <body>
-      <header>
+      <header id="home">
         <nav className="flex items-center justify-between shadow-xl w-full bg-white transition-all p-4 fixed ">
           <div>
             <a
@@ -24,7 +28,7 @@ export default function Home() {
           <ul className="items-center gap-20 mr-10 hidden menu-break:flex">
             <li className="nav-item">
               <a
-                href="#"
+                href="#home"
                 className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
               >
                 Home
@@ -32,7 +36,7 @@ export default function Home() {
             </li>
             <li className="nav-item">
               <a
-                href="#"
+                href="#about"
                 className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
               >
                 About
@@ -40,7 +44,7 @@ export default function Home() {
             </li>
             <li className="nav-item">
               <a
-                href="#"
+                href="#menu"
                 className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
               >
                 Menu
@@ -48,7 +52,7 @@ export default function Home() {
             </li>
             <li className="nav-item">
               <a
-                href="#"
+                href="#contact"
                 className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
               >
                 Contact
@@ -71,32 +75,36 @@ export default function Home() {
             <ul className="space-y-10">
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
+                  onClick={closeMenu}
                 >
                   Home
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
+                  onClick={closeMenu}
                 >
                   About
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#menu"
                   className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
+                  onClick={closeMenu}
                 >
                   Menu
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   className="text-slate-900 text-[17px] font-medium transition-all hover:text-[#CC0D03]"
+                  onClick={closeMenu}
                 >
                   Contact
                 </a>
