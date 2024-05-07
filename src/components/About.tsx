@@ -7,24 +7,24 @@ import { FaRegHandshake } from 'react-icons/fa6'
 
 export default function About() {
   return (
-    <div className="flex flex-col mt-[70px]" id="about">
-      <div className="mt-[50px]">
+    <div className="flex flex-col mt-[70px] md:flex-row" id="about">
+      <div className="mt-[50px] md:flex md:w-full md:">
         <img src={Img3} alt="#" width={450} />
       </div>
-      <div className="space-y-7">
-        <div className="flex flex-col items-center justify-center">
+      <div className="space-y-7 md:grid md:grid-cols-2 ">
+        <div className="flex flex-col items-center justify-center md:absolute md:mt-[-70px] ">
           <h1 className="text-[32px] font-bold ml-[20px] mt-[20px] text-center">
             Sobre nós
           </h1>
           <img src={Linha} alt="Line" />
         </div>
-        <div className="ml-[20px] flex items-center space-x-6">
-          <div>
+        <div className="ml-[20px] flex flex-col items-center space-x-6">
+          <div className="flex flex-row w-full items-center ml-10 mb-2">
             <Users size={60} color="#CC0D03" />
+            <h1 className="text-[16px] font-bold ml-5">Quem Somos</h1>
           </div>
           <div>
-            <h1 className="text-[16px] font-bold">Quem Somos</h1>
-            <p>
+            <p className="text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
               explicabo aliquid voluptas quod quos, eaque, itaque ab fugit hic
               sapiente dolorem ipsam consectetur recusandae! Animi praesentium
@@ -32,13 +32,13 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="ml-[20px] flex items-center space-x-6">
-          <div>
+        <div className="ml-[20px] flex flex-col items-center space-x-6">
+          <div className="flex flex-row w-full items-center ml-10 mb-2">
             <TbTargetArrow size={60} color="#CC0D03" />
+            <h1 className="text-[16px] font-bold ml-5">Nossa Missão</h1>
           </div>
           <div>
-            <h1 className="text-[16px] font-bold">Nossa Missão</h1>
-            <p>
+            <p className="text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
               explicabo aliquid voluptas quod quos, eaque, itaque ab fugit hic
               sapiente dolorem ipsam consectetur recusandae! Animi praesentium
@@ -47,13 +47,13 @@ export default function About() {
           </div>
         </div>
 
-        <div className="ml-[20px] flex items-center space-x-6">
-          <div>
+        <div className="ml-[20px] flex flex-col items-center space-x-6">
+          <div className="flex flex-row w-full items-center ml-10 mb-2">
             <TbCheckupList size={60} color="#CC0D03" />
+            <h1 className="text-[16px] font-bold ml-5">Produtos e Serviços</h1>
           </div>
           <div>
-            <h1 className="text-[16px] font-bold">Produtos e Serviços</h1>
-            <p>
+            <p className="text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
               explicabo aliquid voluptas quod quos, eaque, itaque ab fugit hic
               sapiente dolorem ipsam consectetur recusandae! Animi praesentium
@@ -61,13 +61,15 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="ml-[20px] flex items-center space-x-6">
-          <div>
+        <div className="ml-[20px] flex flex-col items-center space-x-6">
+          <div className="flex flex-row w-full items-center ml-10 mb-2">
             <FaRegHandshake size={60} color="#CC0D03" />
+            <h1 className="text-[16px] font-bold ml-5">
+              Compromisso com o Cliente
+            </h1>
           </div>
           <div>
-            <h1 className="text-[16px] font-bold">Compromisso com o Cliente</h1>
-            <p>
+            <p className="text-gray-400">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
               explicabo aliquid voluptas quod quos, eaque, itaque ab fugit hic
               sapiente dolorem ipsam consectetur recusandae! Animi praesentium
