@@ -8,10 +8,10 @@ import { FaRegHandshake } from 'react-icons/fa6'
 export default function About() {
   return (
     <div className="flex flex-col mt-[70px] md:flex-row" id="about">
-      <div className="mt-[50px] md:flex md:w-full md:">
+      <div className="mt-[50px] md:flex md:w-full md:bg-red-400">
         <img src={Img3} alt="#" width={450} />
       </div>
-      <div className="space-y-7 md:grid md:grid-cols-2 ">
+      <div className="space-y-7 md:grid md:grid-cols-2 md:w-[900px] md:bg-red-50">
         <div className="flex flex-col items-center justify-center md:absolute md:mt-[-70px] ">
           <h1 className="text-[32px] font-bold ml-[20px] mt-[20px] text-center">
             Sobre nós
@@ -24,7 +24,7 @@ export default function About() {
             <h1 className="text-[16px] font-bold ml-5">Quem Somos</h1>
           </div>
           <div>
-            <p className="text-gray-400">
+            <p className="text-gray-400 ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
               explicabo aliquid voluptas quod quos, eaque, itaque ab fugit hic
               sapiente dolorem ipsam consectetur recusandae! Animi praesentium
