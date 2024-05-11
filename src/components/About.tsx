@@ -13,8 +13,10 @@ export default function About() {
       </div>
       <div className="space-y-7 md:grid md:grid-cols-2 md:w-[900px] md:bg-red-50">
         <div className="flex flex-col items-center justify-center md:absolute md:mt-[-70px] ">
-          <h1 className="text-[32px] font-bold m
-          l-[20px] mt-[20px] text-center">
+          <h1
+            className="text-[32px] font-bold m
+          l-[20px] mt-[20px] text-center z-"
+          >
             Sobre nós
           </h1>
           <img src={Linha} alt="Line" />
