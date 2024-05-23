@@ -8,10 +8,10 @@ import { FaRegHandshake } from 'react-icons/fa6'
 export default function About() {
   return (
     <div className="flex flex-col mt-[70px] md:flex-row" id="about">
-      <div className="mt-[50px] md:flex md:w-full md:bg-red-400">
-        <img src={Img3} alt="#" width={450} />
+      <div className="mt-[50px] md:flex md:w-full  ">
+        <img src={Img3} alt="#" className="object-contain w-[600px]" />
       </div>
-      <div className="space-y-7 md:grid md:grid-cols-2 md:w-[900px] md:bg-red-50">
+      <div className="space-y-7 md:grid md:grid-cols-2 md:w-[900px]">
         <div className="flex flex-col items-center justify-center md:absolute md:mt-[-70px] ">
           <h1
             className="text-[32px] font-bold m
