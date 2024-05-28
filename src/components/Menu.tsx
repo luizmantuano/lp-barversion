@@ -22,26 +22,26 @@ export default function Menu(props: ProductsListParams) {
 
   return (
     <div
-      className="bg-bg-bannerTwo bg-center bg-cover h-[800px] mt-[90px]"
+      className="bg-bg-bannerTwo bg-center bg-cover h-[800px] mt-[90px] "
       id="menu"
     >
       <div className="flex items-center justify-center ">
-        <ul className="w-full">
+        <ul className="w-full md:flex md:justify-center md:ml-[350px]">
           {props.data?.map((product) => (
             <li key={product.productId}>
-              <div className="grid items-center justify-center mt-16">
+              <div className="grid items-center justify-center mt-16 ">
                 <button
                   onClick={() => toggleProductVisibility(product.productId)}
-                  className={`w-[400px] text-white hover:border-[#CC0D03] hover:border-b hover:inline-block ${selectedProduct === product.productId ? 'border-b border-[#CC0D03]' : ''}`}
+                  className={`w-[200px] text-white hover:border-[#CC0D03] hover:border-b hover:inline-block  ${selectedProduct === product.productId ? 'border-b border-[#CC0D03]' : ''}`}
                 >
                   {product.title}
                 </button>
               </div>
               {selectedProduct === product.productId && (
-                <ul className="space-y-[40px] mt-[20px] overflow-auto scrollbar-hide">
+                <ul className="space-y-[40px] mt-[20px] overflow-auto scrollbar-hide ">
                   {product.productsList.map((productList) => (
                     <li key={productList.productId}>
-                      <div className="flex flex-row justify-around items-center">
+                      <div className="flex flex-row justify-around items-center ">
                         <img
                           src={productList.img}
                           alt="#"
