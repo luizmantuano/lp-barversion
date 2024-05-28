@@ -11,8 +11,8 @@ export default function About() {
       <div className="mt-[50px] md:flex md:w-full  ">
         <img src={Img3} alt="#" className="object-contain w-[600px]" />
       </div>
-      <div className="space-y-7 md:grid md:grid-cols-2 md:w-[900px]">
-        <div className="flex flex-col items-center justify-center md:absolute md:mt-[-70px] ">
+      <div className="space-y-7 md:grid md:grid-cols-2 md:w-full">
+        <div className="flex flex-col items-center justify-center md:absolute md:mt-[-70px]">
           <h1
             className="text-[32px] font-bold m
           l-[20px] mt-[20px] text-center z-"
