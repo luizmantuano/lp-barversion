@@ -25,7 +25,7 @@ export const ProductMockApi = {
         {
           productId: 4,
           img: 'https://images.pexels.com/photos/13123570/pexels-photo-13123570.png?auto=compress&cs=tinysrgb&w=600',
-          name: 'Jack Deniels',
+          name: 'Jack Daniel`s',
           price: 150.9,
         },
       ],
