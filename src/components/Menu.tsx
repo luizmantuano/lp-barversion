@@ -67,6 +67,12 @@ export default function Menu(props: ProductsListParams) {
                       {formatPrice(productList.price)}
                     </span>
                   </div>
+                  <span className="text-white flex items-center justify-center block md:hidden">
+                    ------------------------------------------------------------
+                  </span>
+                  <span className="text-white hidden md:block">
+                    -----------------------------------------------------------------
+                  </span>
                 </li>
               ))}
             </ul>
