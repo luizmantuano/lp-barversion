@@ -1,4 +1,4 @@
-import { Search, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Sheet, SheetContent } from '@/components/ui/sheet'
 import { useState } from 'react'
 import Line from '@/assets/img/linha.png'
@@ -72,7 +72,6 @@ export default function Home() {
                 Contact
               </a>
             </li>
-            <Search className="cursor-pointer size-6 mr-[100px]" />
           </ul>
 
           <button
