@@ -9,7 +9,7 @@ export default function Contact() {
         <h1 className="text-[32px]">Contate-nos</h1>
         <img src={Linha} alt="linha" />
       </div>
-      <div className="mt-[30px]">
+      <div className="mt-[30px] md:flex md:items-center md:justify-center">
         <p className="max-w-[455px] ml-4 text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
           repellendus nostrum suscipit. Alias voluptates id tenetur unde cumque
@@ -17,7 +17,7 @@ export default function Contact() {
           maiores laborum similique.
         </p>
       </div>
-      <div className="mt-[20px]">
+      <div className="mt-[20px] md:flex md:flex-col md:items-center md:justify-center">
         <h1 className="ml-4 font-bold">Localização</h1>
         <div className="ml-3 space-y-3 mt-3">
           <div className="flex flex-row">
@@ -29,7 +29,7 @@ export default function Contact() {
           <div className="flex flex-row ml-1">
             <Phone width={20} color="#CC0D03" />
             <p className="text-gray-400 ml-4">
-              Cassio e Júnior : (00) 0000-0000
+              Bar Version Dev : (00) 0000-0000
             </p>
           </div>
           <div className="flex flex-row ml-1">
