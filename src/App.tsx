@@ -17,8 +17,7 @@ function App() {
       <Contact />
       <div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.5589749178816!2d-43.685845923952876!3d-22.21886071364945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9929dc35461fa5%3A0x5e38cb464a878e55!2sMercearia%20tia%20Vera!5e0!3m2!1spt-PT!2sbr!4v1713359105310!5m2!1spt-PT!2sbr"
-          width="600"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117603.31996428414!2d-43.233437726652376!3d-22.909543836301612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-PT!2sbr!4v1717031957651!5m2!1spt-PT!2sbr"
           height="450"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
