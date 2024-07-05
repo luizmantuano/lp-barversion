@@ -6,7 +6,7 @@ export const BackToTop = () => {
   const [show, setShow] = useState(false)
 
   const scrollToTop = () => {
-    const scrollStep = -window.scrollY / 20 // Ajuste a velocidade aqui
+    const scrollStep = -window.scrollY / 80 // Ajuste a velocidade aqui
 
     const animateScroll = () => {
       if (window.scrollY > 0) {
