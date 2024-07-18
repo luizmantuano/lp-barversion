@@ -1,9 +1,8 @@
 import { Facebook, Instagram, Twitter } from 'lucide-react'
-import { useState } from 'react'
 import Logo from '../assets/img/logo.png'
 
 export default function Footer() {
-  const [isActive, setIsActive] = useState('white')
+  const isActive = 'white'
 
   return (
     <footer className="bg-black h-[250px] items-center justify-center md:h-[120px]">
@@ -12,7 +11,10 @@ export default function Footer() {
           <img src={Logo} alt="Logo" width={120} />
           <div className="flex flex-row mt-6 gap-6 md:ml-[200px]">
             <div className="w-[30px] h-[30px] bg-[#CC0D03] rounded-full flex items-center justify-center text-white hover:text-[#CC0D03] hover:bg-white md:w-[35px] md:h-[35px]">
-              <Facebook width={18} fill={isActive ? 'white' : 'red'} />
+              <Facebook
+                width={18}
+                fill={isActive === 'white' ? 'white' : 'red'}
+              />
             </div>
             <div className="w-[30px] h-[30px] bg-[#CC0D03] rounded-full flex items-center justify-center text-white hover:text-[#CC0D03] hover:bg-white md:w-[35px] md:h-[35px]">
               <Instagram width={18} />
